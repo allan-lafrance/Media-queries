@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin : 0;
+    padding : 0;
+    border : 0;
+    font-size : 100%;
+    font : arial;
+    vertical-align : baseline;
+    }
+h3{
+    font-size: 1cm;
+    color: #000000;
+}
+.video{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+.vid-row{
+    margin: auto;
+}
+    
+        .conteneur-flexible{
+            display:flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content:center;
+            align-content:center;
+            background-color: rgb(255, 255, 255); /*Bleu*/
+            width:auto;
+            height:100%;
+            border: 1px solid rgb(0, 0, 0);
+            box-sizing:border-box;
+        }
+        
+        .element-flexible{
+            flex:300px;
+            background-color: #0DA; /*Vert*/
+            width: 200px;
+            border: 2px solid green;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        h2{
+            text-align: center;
+            font-size: 2cm;
+            color: #000000;
+        }
+        .homepage-container-3 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .news {
+            width: 85%;
+            margin: 20px auto;
+        }
+        
+        .news .title {
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+        
+        .news .title h2 {
+            font-size: 2em;
+            color: #0095FF;
+            text-transform: uppercase;
+            margin: 100px 0 75px 0;
+        }
+        
+        .news .title p {
+            font-size: 1em;
+            margin-top: 20px;
+        }
+        
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            margin: 25px auto;
+        }
+        
+        .articles .article {
+            width: 100%;
+            height: auto;
+        }
+        
+        .content {
+            padding: 15px 20px;
+        }
+        
+        .content h4 {
+            font-size: 1.50em;
+            font-weight: 500;
+        }
+        
+        .content p {
+            font-size: 1em;
+            color: #7e7e7e;
+            padding-top: 15px;
+        }
+        
+        .content a {
+            text-decoration: none;
+            color: #fff;
+            margin-top: 12px;
+            display: inline-block;
+            background-color:#0095FF;
+            padding: 8px 15px;
+        }
+        
+        .image-section img {
+            width: 100%;
+            height: 100%;
+        }
+.video{
+    background-position: center center;
+    margin-right: 2cm;
+    padding-left: 2cm;
+}
+
+.video iframe {
+    width: 560px;
+    height: 315px;
+}
+
+        #video-header{
+            min-height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            }
+
+          .text-box{
+                width: 90%;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .text-box h1{
+                font-size: 3.5em;
+                
+            }
+
+
+            .header{
+                min-height: 89.5vh;
+                width: 100%;
+                background-image: linear-gradient(rgba(4, 9, 30, 0),rgba(4,9,30,0.7)), url(https://musees.marseille.fr/sites/default/files/styles/banner_middle/public/2022-10/belle-rebelle-sans-texte.png?itok=gEmM8pL2);
+                background-position: center;
+                background-size: cover;
+                
+            }
+
+@media all and (max-width: 600px) {
+    .video iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

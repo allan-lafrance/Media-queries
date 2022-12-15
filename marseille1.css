@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.marseille-history-background-image {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.5)), url(https://www.okvoyage.com/wp-content/uploads/2020/03/marseille-france.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.marseille-history-background-image h1 {
+    color: #fff;
+    font-size: 7em;
+    text-align: center;
+    position: relative;
+    top: 45%;
+    font-weight: 600;
+}
+
+#marseille-history h2{
+    font-size: 3.5em;
+    padding: 25px 0 25px;
+    margin-left: 5%;
+}
+
+#marseille-history h3 {
+    font-style: italic;
+    font-size: 2.125em;
+    color: #000;
+    padding-bottom: 1.875rem;
+    margin-left: 5%;
+}
+
+.marseille-history-content {
+    padding: 5% 20%;
+}
+
+#marseille-history  h4{
+    color: #007bff;
+    font-size: 1.25em;
+    border-left: 0.125rem solid #0095ff;
+    padding-left: 75px;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#marseille-history p{
+    padding: 25px 125px 25px 125px;
+    margin-bottom: 5%;
+    text-align: justify;
+}
+   
+.marseille-history-content hr {
+    margin-bottom: 25px;
+}
+
+.marseille-history-content img {
+    padding: 25px 0 25px 12%;    
+}
+
+@media all and (max-width: 600px) {
+    .marseille-history-background-image {
+        height: 75vh;
+    }
+    .marseille-history-content {
+        padding: 0;
+    }
+    #marseille-history h1 {
+        font-size: 4.25em;
+    }
+    #marseille-history h3 {
+        margin-left: 0;
+        font-size: 1.5em;
+        margin-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #marseille-history h4 {
+        padding: 0 15px 0 15px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .marseille-history-content img {
+        width: 95vw;
+        height: 100%;
+        margin-left: -15px;
+    }
+    #marseille-history p {
+        padding: 5px 15px 0 15px;
+        font-size: 1em;
+    }
+}

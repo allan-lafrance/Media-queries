@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.hike-header {
+    min-height: 89.5vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(https://www.marseille-tourisme.com/app/uploads/marseille-tourisme/2022/10/thumbs/Callelongue-en-famille4%C2%A9LamyOTCM-1-1920x960.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media all and (max-width: 600px) {
+    .hike-header {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 3.5em;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.hike-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hike-content img {
+    height: 100%;
+    width: 600px;
+    border-radius: 5%;
+    margin: 5%;
+}
+
+.hike-left-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hike-right-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hike-right-col img {
+    order: 2;
+}
+
+.hike-right-text {
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.hike-left-text {
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.hike-right-text h2 {
+    padding-bottom: 5%;
+}
+
+.hike-right-text h3 {
+    padding-bottom: 2.25%;
+}
+
+.hike-left-text h2 {
+    padding-bottom: 5%;
+
+}
+
+.hike-left-text h3 {
+    padding-bottom: 2.25%;
+}
+
+@media all and (max-width: 600px) {
+    .hike-left-col,
+    .hike-right-col {
+        flex-direction: column;
+        width: 100vw;
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+    .hike-left-col img,
+    .hike-right-col img {
+        width: 90%;
+        order: 0;
+    }
+    .hike-left-text,
+    .hike-right-text {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 0.85em;
+    }
+}

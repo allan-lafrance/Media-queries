@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.beach-header {
+    min-height: 89.5vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://images.laprovence.com/media/hermes/2022-10/2022-10-15/20221015_1_5_1_1_0_obj26969392_1.jpg?twic=v1/focus=878.5x458.5/cover=1920x1080);
+    background-position: center;
+    background-size: cover;
+}
+
+@media all and (max-width: 600px) {
+    .beach-header {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 { 
+    font-size: 3.5em;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.beach-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.beach-content img {
+    height: 100%;
+    width: 600px;
+    border-radius: 5%;
+    margin: 5%;
+}
+
+.beach-left-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.beach-right-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.beach-right-col img {
+    order: 2;
+}
+
+.beach-right-text {
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.beach-left-text {
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.beach-right-text h2 {
+    padding-bottom: 5%;
+}
+
+.beach-right-text h3 {
+    padding-bottom: 2.25%;
+}
+
+.beach-left-text h2 {
+    padding-bottom: 5%;
+
+}
+
+.beach-left-text h3 {
+    padding-bottom: 2.25%;
+}
+
+@media all and (max-width: 600px) {
+    .beach-left-col,
+    .beach-right-col {
+        flex-direction: column;
+        width: 100vw;
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+    .beach-left-col img,
+    .beach-right-col img {
+        width: 90%;
+        order: 0;
+    }
+    .beach-left-text,
+    .beach-right-text {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 0.85em;
+    }
+}
